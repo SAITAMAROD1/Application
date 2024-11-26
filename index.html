@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <nav class="sidebar" id="sidebar">
+            <button class="toggle-btn" onclick="toggleSidebar()"><span class="mdi mdi-view-dashboard-variant" style="padding-right: 10px;"></span><span class="dash">Dashboard</span></span></button>
+                <ul>
+                    <li><span class="mdi mdi-home-circle-outline" style="font-size: 25px; padding-left: 20px;"></span><span style="font-size: 15px;">Home</span></li>
+                    <li><span class="mdi mdi-card-account-details" style="font-size: 25px; padding-left:20px; "></span> <span style="font-size: 15px;">Profile</span></li>
+                    <li><span class="mdi mdi-clock-time-two-outline" style="font-size: 25px; padding-left: 20px;"></span> <span style="font-size: 15px;">History</span></li>
+                    <li><span class="mdi mdi-content-copy" style="font-size: 25px; padding-left: 20px;"></span> <span>Tasks</span style="font-size: 15px;"></li>
+                    <li><span class="mdi mdi-account-group-outline" style="font-size: 25px; padding-left: 20px;"></span> <span style="font-size: 15px;">Community</span></li>
+                    <li><span class="mdi mdi-cog" style="font-size: 25px; padding-left: 20px;"></span> <span>Settings</span style="font-size: 15px;"></li>
+                    <li><span class="mdi mdi-help-box-outline" style="font-size: 25px; padding-left: 20px;"></span> <span style="font-size: 15px;">Support</span></li>
+                    <li><span class="mdi mdi-shield-key" style="font-size: 25px; padding-left: 20px;"></span> <span style="font-size: 15px;">Privacy</span></li>
+                    </ul>
+        </nav>
+
+        <div class="main">
+            <div class="header-controls">
+                🔎
+                <input type="text" class="search-bar" placeholder="Search...">
+                <button class="icon-btn">🔔</button>
+                <button class="icon-btn">👤</button>
+            </div>
+            <header class="header">
+                <div class="logo">
+                    <img src="assets/img/cat.jpg" alt="User Logo" class="logo-image">
+                    <span>Hi there, <strong></span><span>Morgan Oakley (@morgan)</strong></span>
+                </div>
+                
+                <nav class="right">
+                    <ul>
+                   <li> <button>New</button></li>
+                   <li> <button>Upload</button></li>
+                   <li><button>Share</button></li>
+                </ul>
+                </nav>
+            </header>
+
+            <div class="dashboard">
+                <section class="projects">
+                    <h3>Your Project</h3>
+                    <div class="project-card">
+                       <h4>Super Cool Project</h4>
+                        <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                        
+                    </div>
+                    <div class="project-card">
+                        <h4>Less Cool Project</h4>
+                        <p>Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt.</p>
+                    </div>
+                    <div class="project-card">
+                        <h4>Impossible App</h4>
+                        <p>In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.</p>
+            
+                    </div>
+                    <div class="project-card">
+                        <h4>Easy Peasy App</h4>
+                        <p>Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam.</p>
+                           
+                    </div>
+                    <div class="project-card">
+                        <h4>Ad Blocker</h4>
+                        <p>Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis.</p>
+                        
+                            
+                    </div>
+                    <div class="project-card">
+                        <h4>Money Maker</h4>
+                        <p>Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien.</p>
+                    </div>
+
+                <div class="project-card">
+                    <h4>Materials</h4>
+                    <p>In aedifilis conststruendis, varia ganera materialrum adhibentur</p>
+                </div>
+
+                </section>
+
+                <aside class="sidebar-right">
+                    <h3>Announcements</h3>
+                    <div class="announcements">
+                        
+                        <div class="announcement-item">
+                            <strong>Site Maintenance</strong>
+                            <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac.</p>
+                        </div><br/>
+                        <div class="announcement-item">
+                            <strong>Community Share Day</strong>
+                            <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero.</p>
+                        </div><br/>
+                        <div class="announcement-item">
+                            <strong>Updated Privacy Policy</strong>
+                            <p>Phasellus efficitur nisl eget elit consectetur.</p>
+                        </div>
+                    </div>
+                    <h3>Trending</h3>
+                    <div class="trending">
+                        <ul>
+                       <li><span><img src="assets/img/alien.jpeg" alt="" class="one"></span><span>@tegan World Peace Builder</span></li>
+                       <li><span><img src="assets/img/cat.jpg" alt="" class="one"></span><span>@morgan Super Cool Project</span></li>
+                       <li><span><img src="assets/img/dog.png" alt="" class="one"></span><span>@kendall Life Changing App</span></li>
+                        <li><span><img src="assets/img/bird.png" alt="" class="one"></span><span>@alex No Traffic Maker</span></li>
+                </ul>
+                    </div>  
+                </aside>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/script/script.js"></script>
+</body>
+</html>
